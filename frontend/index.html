@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestCraft</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;,">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-book"></i> TestCraft</h1>
+            <p class="subtitle">Generate custom tests from your study materials</p>
+        </header>
+        
+        <div class="card">
+            <form id="uploadForm">
+                <div class="form-group">
+                    <label for="document"><i class="fas fa-file-upload"></i> Upload Document:</label>
+                    <input type="file" id="document" name="document" accept=".pdf,.doc,.docx,.txt" required>
+                    <p class="hint">Supported formats: PDF, DOCX, TXT</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="numQuestions"><i class="fas fa-list-ol"></i> Number of Questions:</label>
+                    <input type="number" id="numQuestions" name="numQuestions" min="1" value="10" required>
+                </div>
+                
+                <button type="submit"><i class="fas fa-magic"></i> Generate Test</button>
+            </form>
+        </div>
+        
+        <div id="loadingIndicator" style="display: none;">
+            <div class="slider-container">
+                <div class="slider"></div>
+            </div>
+            <p>Generating your test...</p>
+        </div>
+        
+        <div id="output" style="display: none;">
+            <div id="examInfo"></div>
+            <div id="questions"></div>
+        </div>
+        
+        <footer>
+            <p>Powered by TestCraft & AI Technology</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
