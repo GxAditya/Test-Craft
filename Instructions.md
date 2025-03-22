@@ -22,10 +22,3 @@ Design a Test Generator App that allows users to input a document of any format 
 
     Output: The generated test should match the format of the original document, ensuring consistency (e.g., multiple-choice questions, short answer, or essay format as per the input document).
 
-Instructions:
-
-    Do not hallucinate or invent additional questions; only generate questions that align with the content and format of the input document.
-
-    The subjects covered should match those typically found in the exam (e.g., Physics, Chemistry, Mathematics for JEE MAINS or Physics, Chemistry, Biology for NEET).
-
-    If any clarification is needed about the format or content of the input document, ask for further details before proceeding.
